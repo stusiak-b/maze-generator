@@ -55,7 +55,14 @@ public class MazeGenerator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // B Stusiak - My 12x12 maze and path
         n = 12;
+        makeMaze();
+        printMaze();
+        printPath();
+    }
+
+    private static void makeMaze() {
         numVisited = 0;
         rand = new Random();
         north = new boolean[n][n];
@@ -135,10 +142,9 @@ public class MazeGenerator {
                 }
             }
         }
-    printMaze();
-    printPath();
+    
     }
-
+    
     private static void printPath() {
         for (int i = 0; i < path.size(); i++) {
             System.out.print(Arrays.toString(path.get(i)) + " ");
