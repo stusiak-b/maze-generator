@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * n=12
  */
 package mazegenerator;
 
@@ -57,7 +55,7 @@ public class MazeGenerator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        n = 15;
+        n = 12;
         numVisited = 0;
         rand = new Random();
         north = new boolean[n][n];
@@ -138,7 +136,7 @@ public class MazeGenerator {
             }
         }
     printMaze();
-        
+    printPath();
     }
 
     private static void printPath() {
